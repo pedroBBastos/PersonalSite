@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>My Personal Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+      /* "." indica a criação de uma classe, que pode ser usada em algum elemento*/
+      .margin10 {
+        margin-top: 10px;
+      }
+
+      .margin50 {
+        margin-top: 50px;
+      }
+
+      .marginAround {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .mainSearchDiv {
+        position: fixed;
+        width: 700px;
+        left: 50%;
+      }
+
+      .mainSearchDiv .searchInput {
+        position: relative;
+        left: -50%;
+      }
+
+    </style>
+
+    <script>
+
+      $(document).ready(function(){
+
+       // jQuery methods go here...
+
+       // search input enter method
+       $('#search').keydown(function(e){
+         if(e.keyCode == 13)
+          alert("Para de apertar enter mano!");
+       });
+
+      });
+
+    </script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default">
+  </nav>
+
+  <div class="container">
+    <div class="row margin10">
+      <div class="col-sm-12">
+        <div class="mainSearchDiv">
+          <input type="text" class="form-control searchInput" id="search">
+        </div>
+      </div>
+    </div>
+
+    <div class="row margin50">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-body">A Basic Panel</div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-body">A Basic Panel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <footer class="container-fluid">
+    sdcds
+  </footer>
+  -->
+
+</body>
+</html>
