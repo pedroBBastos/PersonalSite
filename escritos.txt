@@ -1,3 +1,13 @@
 https://coderwall.com/p/quutdq/how-to-really-center-an-html-element-via-css-position-absolute-fixed
 
 https://www.w3schools.com
+
+social media icons
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+
+-------------------------------------------------------------
+
+ideias
+  -> colocar nosso feed de likes do facebook
+  -> colocar as páginas do fb que curtimos
+  -> colocar nossas playlists do youtube

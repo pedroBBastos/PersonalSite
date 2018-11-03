@@ -3,35 +3,36 @@
 <head>
     <title>My Personal Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <style>
 
       /* "." indica a criação de uma classe, que pode ser usada em algum elemento*/
       .margin10 {
-        margin-top: 10px;
+        margin-left: 10px;
       }
 
       .margin50 {
-        margin-top: 50px;
+        margin-left: 50px;
       }
 
-      .marginAround {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
+      /*
+      exemplo de herança entre as classes css
 
       .mainSearchDiv {
         position: fixed;
@@ -42,12 +43,73 @@
       .mainSearchDiv .searchInput {
         position: relative;
         left: -50%;
+      } */
+
+      .searchInput {
+        width: 350px;
       }
+
+      .contentBody {
+        position: absolute;
+        top: 70px;
+        left: 30px;
+      }
+
+      .perfilImage {
+        width: 300px;
+        height: 300px;
+      }
+
+      .description {
+        margin-top: 20px;
+      }
+
+      .socialMedias {
+        margin-top: 20px;
+      }
+
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 6px;
+      }
+
+      .fa:hover {
+          opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      /* .d-flex .justify-content-center tr {
+      } */
 
     </style>
 
     <script>
 
+      /*
       $(document).ready(function(){
 
        // jQuery methods go here...
@@ -59,43 +121,52 @@
        });
 
       });
+      */
 
     </script>
 
 </head>
 <body>
 
-  <nav class="navbar navbar-default">
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-sm justify-content-center fixed-top">
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Unicamp</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Hack Life</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Youtube playlists</a></li>
+      <li class="nav-item margin50"><input type="text" class="form-control searchInput" id="search"></li>
+      <li class="nav-item margin10"><button type="button" class="btn btn-primary">Procurar</button></li>
+    </ul>
   </nav>
 
-  <div class="container">
-    <div class="row margin10">
-      <div class="col-sm-12">
-        <div class="mainSearchDiv">
-          <input type="text" class="form-control searchInput" id="search">
-        </div>
-      </div>
+  <div class="container-fluid contentBody" id="contentBody">
+
+    <img src="fotoPerfil.jpg" class="mx-auto d-block rounded-circle perfilImage">
+
+    <div class="d-flex justify-content-center description">
+      <table class="font-italic">
+        <tr class="d-flex justify-content-center">
+          <td>Pedro Barros Bastos</td>
+        </tr>
+        <tr class="d-flex justify-content-center">
+          <td>Junior Developer</td>
+        </tr>
+        <tr class="d-flex justify-content-center">
+          <td>Email : pedro.bbastos123@gmail.com</td>
+        </tr>
+        <tr class="d-flex justify-content-center">
+          <td>Cel phone : +55 19 993028390</td>
+        </tr>
+      </table>
     </div>
 
-    <div class="row margin50">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-body">A Basic Panel</div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-body">A Basic Panel</div>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center socialMedias">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-linkedin"></a>
     </div>
+
   </div>
-
-  <!--
-  <footer class="container-fluid">
-    sdcds
-  </footer>
-  -->
 
 </body>
 </html>
