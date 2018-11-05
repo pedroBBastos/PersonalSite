@@ -5,9 +5,19 @@ https://www.w3schools.com
 social media icons
 https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
+problemas com o firefox
+https://stackoverflow.com/questions/31636402/why-is-css-content-image-not-displaying
+
+Facebook SDK for Python3
+https://facebook-sdk.readthedocs.io/en/latest/index.html
+
+Youtube SDK for Python
+https://developers.google.com/youtube/v3/quickstart/python
 -------------------------------------------------------------
 
 ideias
   -> colocar nosso feed de likes do facebook
   -> colocar as páginas do fb que curtimos
   -> colocar nossas playlists do youtube
+  -> linkar com web framework (Django)
+  -> procurar plataforma para hostear nosso site
