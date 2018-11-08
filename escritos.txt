@@ -22,3 +22,5 @@ ideias
   -> colocar nosso feed de likes do facebook
   -> colocar as páginas do fb que curtimos
   -> colocar nossas playlists do youtube
+    https://developers.google.com/identity/protocols/OAuth2UserAgent?hl=pt_BR
+    ler o acima para poder ter autorização para usar API Youtube de um web server
