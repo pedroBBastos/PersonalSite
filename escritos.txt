@@ -13,11 +13,12 @@ https://facebook-sdk.readthedocs.io/en/latest/index.html
 
 Youtube SDK for Python
 https://developers.google.com/youtube/v3/quickstart/python
+
+Referencia para languagem django para templates
+https://docs.djangoproject.com/en/2.1/ref/templates/language/
 -------------------------------------------------------------
 
 ideias
   -> colocar nosso feed de likes do facebook
   -> colocar as páginas do fb que curtimos
   -> colocar nossas playlists do youtube
-  -> linkar com web framework (Django)
-  -> procurar plataforma para hostear nosso site

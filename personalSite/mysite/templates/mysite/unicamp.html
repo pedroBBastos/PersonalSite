@@ -1,0 +1,26 @@
+{% extends "mysite/index.html" %}
+{% load static %}
+
+{% block title %}Pedro Bastos Unicamp{% endblock%}
+
+{% block style %}
+  .icImage {
+    width: 500px;
+    height: 210px;
+  }
+{% endblock style %}
+
+{% block content %}
+  <img src="{% static 'mysite/images/view_ic.jpg' %}" class="mx-auto d-block icImage">
+
+  <div class="d-flex justify-content-center description">
+    <table class="font-italic">
+      <tr class="d-flex justify-content-center">
+        <td>Undergraduate student in Computer Sciences at Unicamp (University of Campinas - Brazil)</td>
+      </tr>
+      <tr class="d-flex justify-content-center">
+        <td>2017 - ~</td>
+      </tr>
+    </table>
+  </div>
+{% endblock content %}
