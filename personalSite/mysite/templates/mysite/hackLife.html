@@ -1,0 +1,18 @@
+{% extends "mysite/index.html" %}
+{% load static %}
+
+{% block title %}Pedro Bastos HackLife{% endblock%}
+
+{% block style %}
+  .githubLink {
+    width: 300px;
+    height: 300px;
+  }
+
+{% endblock style %}
+
+{% block content %}
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/pedroBBastos">
+      <img src="{% static 'mysite/images/GitHub-Mark.png' %}" class="mx-auto d-block githubLink">
+    </a>
+{% endblock content %}

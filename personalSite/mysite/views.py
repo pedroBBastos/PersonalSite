@@ -7,3 +7,6 @@ def index(request):
 
 def unicamp(request):
     return render(request, 'mysite/unicamp.html', {})
+
+def hacklife(request):
+    return render(request, 'mysite/hackLife.html', {})

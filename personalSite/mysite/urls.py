@@ -6,4 +6,5 @@ app_name = 'mysite'
 urlpatterns = [
     path('', views.index, name='home'),
     path('unicamp/', views.unicamp, name='unicamp'),
+    path('hacklife/', views.hacklife, name='hacklife'),
 ]
